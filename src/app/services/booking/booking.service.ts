@@ -13,6 +13,7 @@ export class BookingService {
   ) { }
 
   getBooking() {
-  return this.http.get(`${this.endpoint}`);
+    let options = {}
+    return this.http.get(`${this.endpoint, options}`);
   }
 }
